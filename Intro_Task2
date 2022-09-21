@@ -1,0 +1,40 @@
+		int number = 0;
+		String season = "SUMMER";
+		if (number > 0) {
+			System.out.println("Number is positive");
+			}else if(number == 0) {
+				System.out.println("Number is zero");
+			}else {
+			System.out.println("Number is negative");
+			}
+		
+		do {
+			number++;
+			System.out.println("In do-while: " + number);
+		} while (number > 3);
+		
+		while (number < 3) {
+			number++;
+			System.out.println("In while: " + number);
+		}
+		
+		for (int numeroFor = 0; numeroFor < 3; numeroFor++) {
+			System.out.println("In for: " + numeroFor);
+		}
+		
+		switch(season) {
+		case "SPRING":
+			System.out.println("It is spring");
+			break;
+		case "SUMMER":
+			System.out.println("It is summer");
+			break;
+		case "AUTUMN":
+			System.out.println("It is autumn");
+			break;
+		case "WINTER":
+			System.out.println("It is winter");
+			break;
+		default:
+			System.out.println("?");
+		}
