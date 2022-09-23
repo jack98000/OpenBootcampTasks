@@ -1,0 +1,72 @@
+
+	public class Persona{
+		//Atributos
+		private int edad;
+		private String nombre;
+		private String telefono;
+		 
+		//Constructor
+		public Persona(int edad, String nombre, String telefono){
+			this.edad = edad;
+		   	this.nombre = nombre;
+		   	this.telefono = telefono;
+		}
+		
+		//Getters
+		public int getEdad(){
+			return this.edad;
+		}
+		
+		public String getName(){
+			return this.name;
+		}
+		
+		public String getTelefono(){
+			return this.telefono;
+		} 
+		  
+	}
+	
+  public class Cliente extends Persona{
+		//Atributos
+		private int credito;
+		
+    //Constructor 
+		public Cliente(int edad, String nombre, String telefono, int credito){
+			super(edad, nombre, telefono);
+			this.credito = credito;
+		}
+		//Getter
+		public int getCredito(){
+			return this.credito;
+		}
+	}
+		
+	public class Trabajador extends Persona{
+		//Atributos
+		private double salario;
+			
+		//Constructor 
+		public Trabajador(int edad, String nombre, String telefono, double salario){
+			super(edad, nombre, telefono);
+		 	this.salario = salario;
+		}
+		//Getter
+		public double getSalario(){
+			return this.salario
+		}
+	}
+	
+	public static void main(String[] args) {
+		 Cliente cliente1 = new Cliente(20, "Marcos", "999999999", 2000);
+		 System.out.println(cliente1.getEdad());
+		 System.out.println(cliente1.getName());
+		 System.out.println(cliente1.getTelefono());
+		 System.out.println(cliente1.getCredito());
+		 
+		 Trabajador trabajador1 = new Trabajador(20, "Maria", "699999999", 3000);
+		 System.out.println(cliente1.getEdad());
+		 System.out.println(cliente1.getName());
+		 System.out.println(cliente1.getTelefono());
+		 System.out.println(cliente1.getSalario());
+  }
